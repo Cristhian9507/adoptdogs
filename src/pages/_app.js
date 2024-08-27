@@ -2,6 +2,7 @@ import '../css/style.css'
 import '../css/form.css'
 import Head from 'next/head'
 import Link from 'next/link'
+import OpeningHours from './[id]/openingHours'
 
 function MyApp({ Component, pageProps }) {
   return (
@@ -30,6 +31,8 @@ function MyApp({ Component, pageProps }) {
       <div className="grid wrapper">
         <Component {...pageProps} />
       </div>
+        <OpeningHours {...pageProps} />
+      
     </>
   )
 }
